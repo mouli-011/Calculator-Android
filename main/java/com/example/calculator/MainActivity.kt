@@ -12,7 +12,7 @@ import com.example.calculator.databinding.ActivityMainBinding
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-    private lateinit var operation:String
+    private var operation:String = ""
     private var viewChanged = false
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewModel: MainActivityViewModel
