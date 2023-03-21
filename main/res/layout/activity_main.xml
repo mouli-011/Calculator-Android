@@ -3,69 +3,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:gravity="center">
 
         <Button
             android:id="@+id/add_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.41000003" />
+            android:text="@string/add"/>
 
         <Button
             android:id="@+id/sub_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sub"
-            app:layout_constraintEnd_toEndOf="@+id/add_button"
-            app:layout_constraintStart_toStartOf="@+id/add_button"
-            app:layout_constraintTop_toBottomOf="@+id/add_button" />
-
+            android:text="@string/sub"/>
         <Button
             android:id="@+id/mul_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mul"
-            app:layout_constraintEnd_toEndOf="@+id/add_button"
-            app:layout_constraintStart_toStartOf="@+id/add_button"
-            app:layout_constraintTop_toBottomOf="@+id/sub_button" />
+            android:text="@string/mul"/>
 
         <Button
             android:id="@+id/div_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/div"
-            app:layout_constraintEnd_toEndOf="@+id/add_button"
-            app:layout_constraintStart_toStartOf="@+id/add_button"
-            app:layout_constraintTop_toBottomOf="@+id/mul_button" />
+            android:text="@string/div"/>
 
         <TextView
             android:id="@+id/resultTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.44" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/reset_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/reset"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/resultTextView"
-            app:layout_constraintVertical_bias="0.060000002" />
+            android:text="@string/reset"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </layout>
